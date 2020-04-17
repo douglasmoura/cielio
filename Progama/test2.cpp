@@ -47,11 +47,9 @@ main(){
 
 
 	          }else if (g_DataExercicios == 2) {
-		      g_EscolhaExercicios = -1;
-	          }else if (g_DataExercicios!=1 && g_DataExercicios!=2) {
-		      g_EscolhaExercicios = 777;
-	          }
+		      
                return g_EscolhaExercicios;
+              } 
 
 
 }
@@ -90,13 +88,13 @@ int Interface_DataExercicios (){
 	 int g_DataExercicios;
 
 	printf("######################\n");
-	printf("#Trocar de Exercício?#\n");
+	printf("###### Deseja ? ######\n");
 	printf("######################\n");
 	printf("##### 1 -> Entrar ####\n");
 	printf("##### 2 ->  Sair  ####\n");
 	printf("######################\n");
 	scanf("%d",&g_DataExercicios);
-	system("clear");
+	system("cls");
 
 	return g_DataExercicios;
 
@@ -108,7 +106,7 @@ printf ("Selecione o Exercício\n");
 printf ("1- Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não.");
 printf ("\n2- O salário fixo e o valor das vendas efetuadas pelo vendedor de uma empresa.");
 scanf("%d", &g_MenuOpcao);
-system("clear");
+system("cls");
 
 return g_MenuOpcao;
 }
@@ -121,7 +119,7 @@ int Lista_Exercicios() {
 	    g_EscolhaExercicios= 1;
 	}else if ((g_MenuOpcao == 2 ) && ( g_DataExercicios == 1)) {
 		g_EscolhaExercicios = 2;
-		getchar();
+		system("cls");
 		printf("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
@@ -135,7 +133,7 @@ int Lista_Exercicios() {
 void TrocarOpcao() {
 	int TrocarOpcao;
     printf("######################\n");
-	printf("#Trocar de Exercício?#\n");
+	printf("#Trocar de Exercicio?#\n");
 	printf("######################\n");
 	printf("###### 1 -> Sim ######\n");
 	printf("###### 2 -> Não ######\n");
@@ -143,21 +141,21 @@ void TrocarOpcao() {
 	scanf ("%d", &TrocarOpcao);
 
 	if (TrocarOpcao == 1) {
-		getchar();
+		system("cls");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
 
 	}else if (TrocarOpcao == 2) {
 		g_EscolhaExercicios = g_MenuOpcao;
 	} else if (TrocarOpcao > 2) {
-		getchar();
+		system("cls");
 		printf ("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
 	}
 	else {
 
-		getchar();
+		system("cls");
 		printf ("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
@@ -205,7 +203,7 @@ O programa deverá escrever : - A idade do funcionário; - O tempo de trabalho d
  //- A idade do funcionário; - O tempo de trabalho do empregado; - A mensagem 'Não Apto para aposentadoria'    
      printf("Idade funcionario : %d\n", idade);
      printf("Tempo de trabalho do empregado : %d\n", tempoTrabalhado);
-     printf("Nao apto para aposentadoria\n");
+     printf("Nao apto para aposentadoria\n\n");
  
 
 
@@ -244,7 +242,7 @@ scanf("%f", &valorvendas);
     salariototal = salariofixo + (valorvendas * 0.08); 
 
     } 
-    printf("O salario total é : %.2f reais\n", salariototal); 
+    printf("O salario total é : %.2f reais\n\n", salariototal); 
     getchar();
 	TrocarOpcao();
 }

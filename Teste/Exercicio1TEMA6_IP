@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+
+main(){
+   int op;
+   float F,C;
+
+    printf("Digite a temperatura em graus celsius: ");
+    scanf("%f", &C);
+
+    for(op=1;op<=5;op++)
+    {
+      F = (9 * C + 160) / 5;
+      printf("A temperatura convertida eh:\n %f\n", F);
+    }
+
+}

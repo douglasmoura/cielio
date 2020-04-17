@@ -121,7 +121,7 @@ int Lista_Exercicios() {
 	    g_EscolhaExercicios= 1;
 	}else if ((g_MenuOpcao == 2 ) && ( g_DataExercicios == 1)) {
 		g_EscolhaExercicios = 2;
-		getchar();
+		system("clear");
 		printf("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
@@ -143,21 +143,21 @@ void TrocarOpcao() {
 	scanf ("%d", &TrocarOpcao);
 
 	if (TrocarOpcao == 1) {
-		getchar();
+		system("clear");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
 
 	}else if (TrocarOpcao == 2) {
 		g_EscolhaExercicios = g_MenuOpcao;
 	} else if (TrocarOpcao > 2) {
-		getchar();
+		system("clear");
 		printf ("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
 	}
 	else {
 
-		getchar();
+		system("clear");
 		printf ("Opção inválida, por favor escolha uma das opção listadas\n");
 		g_MenuOpcao = Interface_ListaExercicios();
 		g_EscolhaExercicios = g_MenuOpcao;
