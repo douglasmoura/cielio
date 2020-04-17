@@ -2,7 +2,6 @@
 #include <locale.h>
 #include <stdlib.h>
 #include <math.h>
-//cieli doeu  cu e sou ggaayy
 void Exercicio1();
 void Exercicio2();
 void TrocarOpcao();
